@@ -81,7 +81,7 @@ img{
 	}
 	&_bg{
 		padding: 40px 0 10px;
-		background-size: 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		overflow:hidden;
@@ -110,7 +110,22 @@ img{
 	&_img{
 		text-align: center;
 	}
+}
 
+@media screen and (max-width: 768px ) {
+	.main{
+		&_left{
+			float: none;
+			width: 100%;
+		}
+		&_right{
+			float: none;
+			width: 100%;
+		}	
+		&_caption{		  
+			margin-left: 0;
+		}
+	}
 }
 
 .form {
@@ -236,6 +251,27 @@ background: url('http://noatech.elchupacabrastudio.com/wp-content/themes/noatech
 input[type="radio"]:checked + span::before {
 content: '';
 background: url('http://noatech.elchupacabrastudio.com/wp-content/themes/noatech/img/checked.png') no-repeat center center;
+}
+
+
+@media screen and (max-width: 768px ) {
+
+}
+
+@media screen and (max-width: 480px ) {
+	.form {
+		&_main{
+		  width: 80%;
+		  float: none;		  
+		}
+		&_caption{
+			padding-left: 0;
+			float: none;
+		}
+	}	
+	input[type="submit"] {
+		font-size: 12px;
+	}
 }
 
 .security{
